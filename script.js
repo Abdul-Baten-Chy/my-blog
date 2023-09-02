@@ -38,7 +38,7 @@ const handler = async (display)=> {
            
            cardElement.innerHTML = `
         <div class="card card-compact  bg-base-100 shadow-xl">
-            <figure><img src="${data?.thumbnail} " alt="Shoes" class="h-[200px] w-full object-cover " /></figure>
+            <figure><img src="${data.thumbnail ? data.thumbnail : 'Icon.png'}" alt="Shoes" class="h-[200px] w-full object-cover " /></figure>
             <p id="upload-time" class="text-right pr-3 -mt-7 text-white font-bold" >${hours} Hours ${minitues}Min ago</p>
             
           <div class="card-body">
@@ -46,7 +46,10 @@ const handler = async (display)=> {
            <figure><img src="${data?.authors[0].profile_picture}" class="rounded-full w-10 h-10" alt="Shoes" /></figure>
            <h2 class="card-title text-[#171717] text-base font-bold">${data.title}</h2>
            </div>
-            <p class="ml-14">${data?.authors[0]?.profile_name} ${data?.authors[0]?.verified? 'icon': ''}</p>
+           <div class="ml-14 flex gap-4 w-36 ">
+           <p>${data?.authors[0]?.profile_name}</p>
+           <img class="block" src="${data?.authors[0]?.verified? 'tick.png': ''}"/>
+           </div>
             <p class="ml-14">${data?.others?.views} Views</p>
           </div>
         </div>
