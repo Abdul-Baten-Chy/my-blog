@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        main{
+            padding: 20px 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div>
+            <h2>Discuss the scope of ver, let and const</h2>
+            <h3>Scope of var:</h3>
+            <p>
+                The var keyword has function-level scope, which means that a variable declared with var is function-scoped. It is accessible anywhere within the function where it is declared. If declared outside of any function, it becomes a global variable, accessible throughout the entire program. Variables declared with var are also subject to a concept called "hoisting," where they are moved to the top of their containing function or global scope during the compilation phase. This means you can access a var variable before it's declared in your code, although its value will be undefined.</p>
+            <h3>Scope of let:</h3>
+            <p>The let keyword introduced in ES6 has block-level scope. This means that a variable declared with let is confined to the block (inside curly braces { }) in which it is defined. Variables declared with let are not hoisted to the top of their containing block, and they are not accessible before their declaration point within that block. This behavior helps prevent certain types of bugs and makes it easier to reason about variable scope in your code. It is often recommended over var for declaring variables.</p>
+            <h3>Scope of const:</h3>
+            <p>Similar to let, the const keyword also has block-level scope. Variables declared with const are block-scoped, and they cannot be reassigned after their initial value is assigned. This makes const suitable for declaring constants or variables that should not change their values. However, it's important to note that while the variable cannot be reassigned, the value it holds can still be mutable if it's an object or an array. Like let, const is not hoisted to the top of its containing block.</p>
+        </div>
+        <div>
+            <h2>use case of null and undefine</h2>
+            <h3>use case of null</h3>
+            <li>Intentional absence of value: null is typically used to represent the intentional absence of any object value or to indicate that a variable or property does not currently have a meaningful value. For example, if you have a variable that is supposed to hold an object reference but doesn't have one yet, you can initialize it with null.</li>
+            <li>Explicitly clearing a value: You can set a variable or object property to null to explicitly clear its value when you no longer need it. This can be helpful for memory management in certain cases.</li>
+            <li>Return value for functions: Some functions return null to indicate that they did not find a valid result or encountered an error during execution.</li>
+            <h3>use case of undefine</h3>
+            <li>if variable is not initialised</li>
+            <li>if function does not return anyting then undefine will be printed</li>
+            <li>if function has return but it is not assigned what to returned</li>
+            <li>if funtion receive less aurguments than its paramiter </li>
+            <li>if any one try to access any property that the object dont have then undefine will be printed </li>
+        </div>
+        <div>
+            <h2>What do you mean by REST API</h2>
+            <P>
+                Representational State Transfer (REST) is an architectural style that defines a set of constraints to be used for creating web services. REST API is a way of accessing web services in a simple and flexible way without having any processing.
+
+                A request is sent from client to server in the form of a web URL as HTTP GET or POST or PUT or DELETE request. After that, a response comes back from the server in the form of a resource which can be anything like HTML, XML, Image, or JSON. But now JSON is the most popular format being used in Web Services.
+            </P>
+        </div>
+    </main>
+</body>
+</html>
