@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;900&family=Manrope:wght@400;500;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e6fae01267.js" crossorigin="anonymous"></script>
     <style>
         #cards-container{
             display: grid;
@@ -17,27 +18,31 @@
             gap: 15px;
         
         }
+        nav{
+
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="flex justify-between items-center mx-16 mt-8">
+        <nav class="flex flex-col  md:flex-row justify-between items-center mx-16 mt-8 gap-4">
             <div class="logo"><img src="./Logo.png" alt=""></div>
-            <button class="btn btn-accent " id="sort-view">Sort by view</button>
+            <button class="btn btn-accent  " id="sort-view">Sort by view</button>
             <a href="blog.html" target="_blank"><button class="btn btn-accent" id="blog">Blog</button></a>
         </nav>
         <hr class="mx-16 mt-8">
     </header>
     <body>
-        <div class="tabs flex justify-center my-8" id="tab-container">
+        <div class="tabs flex flex-col md:flex-row items-center gap-4 justify-center my-8 " id="tab-container">
            
         </div>
         <div id="cards-container" class="px-6">
+            <img src="./Icon.png" alt="" hidden>
 
         </div>
     </body>
     <footer>
-
+<img src="./Icon.png" alt="" id="default" hidden>
     </footer>
     <script src="script.js"></script>
 </body>
